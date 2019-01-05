@@ -10,7 +10,6 @@ class Main extends Component {
       <Consumer>
         {value => {
           const { silos, user } = value
-          if (Object.keys(user).length > 0) {
               const siloList = []
               /*for (const k in silos) {
                 console.log(typeof k, k, silos[k].groups)
@@ -41,10 +40,6 @@ class Main extends Component {
                   </div>
                 </div>
               )
-              } else {
-                  this.props.history.push('/login')
-                  
-                }
         }}
       </Consumer>
       
